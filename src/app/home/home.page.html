@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Anime
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let fan of json.animeData?.anime"> 
+    <ion-card-header (click)="getAnimeDetails($event,fan)">
+        <ion-card-title>{{fan.name}}</ion-card-title>
+    </ion-card-header>
+   
+</ion-card>
+</ion-content>
